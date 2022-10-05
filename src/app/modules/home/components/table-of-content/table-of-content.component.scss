@@ -2,7 +2,6 @@ $font-color: #444444;
 
 .table-of-content-container {
     padding: 3vh 0;
-    height: 130vh;
     .table-content-header {
         font-size: 2vw;
         font-weight: 600;
@@ -43,9 +42,11 @@ $font-color: #444444;
                 display: flex;
                 padding: 0 5vh;
                 flex-direction: row;
+                font-size: 1vw;
                 .sub-section-title {
                     width: 85%;
                     color: $font-color;
+                    font-weight: 600;
                 }
                 .sub-section-pageNumber {
                     width: 15%;

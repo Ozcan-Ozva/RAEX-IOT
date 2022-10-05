@@ -1,9 +1,9 @@
 $font-color: #444444; 
 
 .cover-container {
-    height: 130vh;
     display: flex;
-    padding-top: 15vh;
+    padding-top: 15%;
+    padding-bottom: 30%;
     align-content: center;
     justify-content: flex-start;
     align-items: center;
@@ -16,7 +16,7 @@ $font-color: #444444;
     }
     .cover-icon {
         img{
-            width: 25vh;
+            width: 10vw;
         }
     }
     .cover-info {
@@ -30,12 +30,12 @@ $font-color: #444444;
         .cover-info-content {
             display: flex;
             .info-title {
-                font-size: 3vh;
+                font-size: 2vw;
                 font-weight: 600;
                 color: $font-color;
             }
             .info-description {
-                font-size: 3vh;
+                font-size: 2vw;
                 font-weight: 400;
                 color: $font-color;
             }

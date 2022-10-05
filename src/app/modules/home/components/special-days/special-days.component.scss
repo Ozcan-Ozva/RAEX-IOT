@@ -2,7 +2,6 @@ $font-color: #444444;
 
 .special-days-container {
     padding: 3vh 0;
-    height: 130vh;
     .special-days-header {
         font-size: 2vw;
         font-weight: 600;
@@ -18,7 +17,7 @@ $font-color: #444444;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            border: 4px solid #7655E6;
+            border: 0.13rem solid #7655E6;
             padding: 1vh;
             border-radius: 25px;
             .special-days-info-container {

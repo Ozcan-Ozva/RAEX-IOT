@@ -1,9 +1,12 @@
 .page-container {
     position: relative;
-    width: 210mm;
-    min-height: 297mm;
-    padding: 20mm;
-    padding-top: 1mm;
+    /* width: 210mm; */
+    width: 40vw;
+    /* min-height: 297mm; */
+    height: 100%;
+    /* padding: 20mm;
+    padding-top: 1mm; */
+    padding: 1vh 4vw 10vh 4vw;
     border: 1px #D3D3D3 solid;
     border-radius: 5px;
     background: white;
@@ -16,11 +19,13 @@
         align-items: flex-start;
         border-bottom: 1px solid;
         margin-top: 3vh;
+        font-size: 0.9vw;
     }
     .page-footer {
         position: absolute;
         bottom: 0;
-        width: 84%;
+        left: 5vw;
+        width: 83%;
         display: flex;
         align-content: center;
         justify-content: center;
@@ -28,5 +33,6 @@
         flex-direction: row;
         border-top: 1px solid;
         margin-bottom: 2vh;
+        font-size: 0.9vw;
     }
 }
