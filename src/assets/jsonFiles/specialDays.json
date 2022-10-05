@@ -1,0 +1,82 @@
+[
+    {
+        "id": 6,
+        "tadig": "ARMOR",
+        "special_day_name": "New Year",
+        "type": "recurring",
+        "recurring_date": "–01-01",
+        "non_recurring": "N/A"
+    },
+    {
+        "id": 7,
+        "tadig": "ARMOR",
+        "special_day_name": "Christmas",
+        "type": "recurring",
+        "recurring_date": "–01-06",
+        "non_recurring": "N/A"
+    },
+    {
+        "id": 8,
+        "tadig": "ARMOR",
+        "special_day_name": "Army Day",
+        "type": "recurring",
+        "recurring_date": "–01-28",
+        "non_recurring": "N/A"
+    },
+    {
+        "id": 9,
+        "tadig": "ARMOR",
+        "special_day_name": "International Women Day",
+        "type": "recurring",
+        "recurring_date": "–03-08",
+        "non_recurring": "N/A"
+    },
+    {
+        "id": 10,
+        "tadig": "ARMOR",
+        "special_day_name": "Day of Commemoration of Armenian Genocide",
+        "type": "recurring",
+        "recurring_date": "–04-24",
+        "non_recurring": "N/A"
+    },
+    {
+        "id": 11,
+        "tadig": "ARMOR",
+        "special_day_name": "Workers’ Day",
+        "type": "recurring",
+        "recurring_date": "–05-01",
+        "non_recurring": "N/A"
+    },
+    {
+        "id": 12,
+        "tadig": "ARMOR",
+        "special_day_name": "Victory Day",
+        "type": "recurring",
+        "recurring_date": "–05-09",
+        "non_recurring": "N/A"
+    },
+    {
+        "id": 13,
+        "tadig": "ARMOR",
+        "special_day_name": "First Armenian Republic Day",
+        "type": "recurring",
+        "recurring_date": "–05-28",
+        "non_recurring": "N/A"
+    },
+    {
+        "id": 14,
+        "tadig": "ARMOR",
+        "special_day_name": "Constitution Day",
+        "type": "recurring",
+        "recurring_date": "–07-05",
+        "non_recurring": "N/A"
+    },
+    {
+        "id": 15,
+        "tadig": "ARMOR",
+        "special_day_name": "Independence Day",
+        "type": "recurring",
+        "recurring_date": "–09-21",
+        "non_recurring": "N/A"
+    }
+]

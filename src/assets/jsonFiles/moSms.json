@@ -1,0 +1,15 @@
+[
+    {
+        "id": 12,
+        "tadig": "ARMOR",
+        "location": "Any",
+        "destination_band": "Rest of the World",
+        "ctl1": "CTL 1: 2, CTL 2: 0, CTL 3: 0, CTL details: n/a",
+        "ctl2": null,
+        "ctl3": null,
+        "ctl_details": null,
+        "timeband": "Standard (No Peak / Off Peak period is applied)",
+        "fix_charge": "0.18",
+        "applicable_taxes": null
+    }
+]

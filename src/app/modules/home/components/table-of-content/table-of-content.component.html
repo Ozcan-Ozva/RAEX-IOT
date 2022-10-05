@@ -1,0 +1,15 @@
+<app-pdf-page [pageFooterTitle]="'1'">
+    <div class="table-of-content-container">
+        <div class="table-content-header">Contents</div>
+        <div class="table-of-content-info">
+            <div *ngFor="let section of sections" class="table-of-content-section">
+                <div class="title">{{section.title}}</div>
+                <div class="page-number">{{section.pageNumber}}</div>
+                <div *ngFor="let subSection of section.subPage" class="sub-section-table">
+                    <div class="sub-section-title">{{subSection.title}} ...</div>
+                    <div class="sub-section-pageNumber">{{subSection.pageNumber}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-pdf-page>

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 15,
+        "tadig": "ARMOR",
+        "normalized_pricing_definition": "1 min",
+        "services": "Telephony",
+        "location": "Any"
+    },
+    {
+        "id": 16,
+        "tadig": "ARMOR",
+        "normalized_pricing_definition": "1 min",
+        "services": "Facsimile gr.3",
+        "location": "Any"
+    },
+    {
+        "id": 17,
+        "tadig": "ARMOR",
+        "normalized_pricing_definition": "1 min",
+        "services": "oice Messaging",
+        "location": "Any"
+    },
+    {
+        "id": 18,
+        "tadig": "ARMOR",
+        "normalized_pricing_definition": "1 min",
+        "services": "Emergency Call",
+        "location": "Any"
+    }
+]

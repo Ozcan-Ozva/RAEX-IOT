@@ -1,0 +1,12 @@
+<app-pdf-page [pageHeader]="false" [pageFooter]="false">
+    <div class="cover-container">
+        <div class="cover-title">{{coverTitle}}</div>
+        <div class="cover-icon"><img src="assets/images/cover/ARMOR.png" alt=""></div>
+        <div class="cover-info">
+            <div *ngFor="let info of coverInfo" class="cover-info-content">
+                <div class="info-title">{{info.title}}: &nbsp;</div>
+                <div class="info-description">{{info.description}}</div>
+            </div>
+        </div>
+    </div>
+</app-pdf-page>

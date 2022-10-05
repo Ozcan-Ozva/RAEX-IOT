@@ -1,0 +1,44 @@
+$font-color: #444444; 
+
+.cover-container {
+    height: 130vh;
+    display: flex;
+    padding-top: 15vh;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2vh;
+    .cover-title{
+        font-size: 3vw;
+        font-weight: 600;
+        color: $font-color;
+    }
+    .cover-icon {
+        img{
+            width: 25vh;
+        }
+    }
+    .cover-info {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 1vh;
+        row-gap: 1vh;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        .cover-info-content {
+            display: flex;
+            .info-title {
+                font-size: 3vh;
+                font-weight: 600;
+                color: $font-color;
+            }
+            .info-description {
+                font-size: 3vh;
+                font-weight: 400;
+                color: $font-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "id": 11,
+        "tadig": "ARMOR",
+        "service": "PSData",
+        "rating_interval_type": "Volume rating intervals",
+        "rating_interval_name": "Per 10 KB",
+        "interval_length": "10 kbyte",
+        "repetition_factor": "0",
+        "initial_period_not_charged": "-"
+    }
+]

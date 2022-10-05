@@ -1,0 +1,15 @@
+<div class="container">
+    <table class="responsive-table">
+        <caption>{{table_title}}</caption>
+        <thead>
+            <tr>
+                <th *ngFor="let key of column_data" scope="col">{{key.header}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let record of grid_data">
+                <td *ngFor="let key of column_data">{{record[key.field]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

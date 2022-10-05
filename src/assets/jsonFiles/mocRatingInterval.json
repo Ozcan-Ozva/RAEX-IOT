@@ -1,0 +1,12 @@
+[
+    {
+        "id": 10,
+        "tadig": "ARMOR",
+        "service": "MOC",
+        "rating_interval_type": "Duration rating intervals",
+        "rating_interval_name": "Per min",
+        "interval_length": "60 sec",
+        "repetition_factor": "0",
+        "initial_period_not_charged": "-"
+    }
+]

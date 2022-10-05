@@ -1,0 +1,11 @@
+[
+    {
+        "id": 4,
+        "tadig": "ARMOR",
+        "timeband_name": "Standard (No Peak / Off Peak period is applied)",
+        "start_time": "00:00:00",
+        "end_time": "23:59:59",
+        "weekdays": "None",
+        "special_days": "All"
+    }
+]

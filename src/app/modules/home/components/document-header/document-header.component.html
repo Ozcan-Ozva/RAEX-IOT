@@ -1,0 +1,11 @@
+<app-pdf-page [pageFooterTitle]="'2'">
+    <div class="document-header-container">
+        <div class="document-header">Document Header</div>
+        <div class="document-header-content">
+            <div *ngFor="let data of documentHeader | keyvalue" class="document-header-info">
+                <div class="document-header-info-title">{{data.key}}</div>
+                <div class="document-header-info-description">{{data.value}}</div>
+            </div>
+        </div>
+    </div>
+</app-pdf-page>

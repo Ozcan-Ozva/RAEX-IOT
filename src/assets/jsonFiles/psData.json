@@ -1,0 +1,13 @@
+[
+    {
+        "id": 4,
+        "tadig": "ARMOR",
+        "normalized_volume_pricing_definition": "10 kbyte",
+        "location": "Any",
+        "apn_band": "Standard",
+        "ctl1": "CTL 1: 10, CTL 2: 0, CTL 3: , CTL details: n/a",
+        "ctl2": null,
+        "ctl3": null,
+        "ctl_details": null
+    }
+]

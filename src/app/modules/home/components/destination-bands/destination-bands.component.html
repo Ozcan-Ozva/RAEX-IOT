@@ -1,0 +1,13 @@
+<app-pdf-page [pageFooterTitle]="'4'">
+    <div class="destination-bands-container">
+        <div class="destination-bands-header">Destination Bands</div>
+        <div class="destination-bands-content">
+            <app-raex-table
+             *ngFor="let destinationBand of displayedDestinationBandsGroup"
+             [column_data]="columnData"
+             [grid_data]="destinationBand.displayed_band_attribute"
+             [table_title]="destinationBand.destination_band_name"
+             ></app-raex-table>
+        </div>
+    </div>
+</app-pdf-page>

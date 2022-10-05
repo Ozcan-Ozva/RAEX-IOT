@@ -1,0 +1,36 @@
+$font-color: #444444; 
+
+.document-header-container {
+    padding: 3vh 0;
+    height: 130vh;
+    .document-header {
+        font-size: 2vw;
+        font-weight: 600;
+        color: $font-color;
+    }
+    .document-header-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 1.5vh;
+        margin-top: 1.5vh;
+        .document-header-info {
+            display: flex;
+            flex-wrap: nowrap;
+            &:hover {
+                background-color: lighten($color: antiquewhite, $amount: 2);
+            }
+            .document-header-info-title {
+                width: 60%;
+                font-size: 1.2vw;
+                font-weight: 600;
+                color: $font-color;
+            }
+            .document-header-info-description {
+                width: 40%;
+                font-size: 1.1vw;
+                color: $font-color;
+            }
+        }
+    }
+}

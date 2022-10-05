@@ -1,0 +1,21 @@
+<app-pdf-page [pageFooterTitle]="'3'">
+    <div class="special-days-container">
+        <div class="special-days-header">Special Days</div>
+        <div class="special-days-content">
+            <div *ngFor="let data of specialDays" class="special-days-info">
+                <div class="special-days-info-container">
+                    <div class="special-days-info-title">Special Day Name: </div>
+                    <div class="special-days-info-value">{{data.special_day_name}}</div>
+                </div>
+                <div class="special-days-info-container">
+                    <div class="special-days-info-title">Type: </div>
+                    <div class="special-days-info-value">{{data.type}}</div>
+                </div>
+                <div class="special-days-info-container">
+                    <div class="special-days-info-title">Recurring Date: </div>
+                    <div class="special-days-info-value">{{data.recurring_date}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-pdf-page>

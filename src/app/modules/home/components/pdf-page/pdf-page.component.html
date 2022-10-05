@@ -1,0 +1,7 @@
+<div class="page-container">
+    <div *ngIf="pageHeader" class="page-header">{{pageHeaderTitle}}</div>
+    <div class="page-content">
+        <ng-content></ng-content>
+    </div>
+    <div *ngIf="pageFooter" class="page-footer">{{pageFooterTitle}}</div>
+</div>

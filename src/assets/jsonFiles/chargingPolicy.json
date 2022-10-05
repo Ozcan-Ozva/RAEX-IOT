@@ -1,0 +1,68 @@
+[
+    {
+        "id": 28,
+        "tadig": "ARMOR",
+        "policy": "Charging from channel seizure",
+        "state": "Charging starts at call answer time"
+    },
+    {
+        "id": 29,
+        "tadig": "ARMOR",
+        "policy": "Segmentation rule",
+        "state": "No"
+    },
+    {
+        "id": 30,
+        "tadig": "ARMOR",
+        "policy": "Charging for unsuccessful call attempts",
+        "state": "No"
+    },
+    {
+        "id": 31,
+        "tadig": "ARMOR",
+        "policy": "WLAN session setup attempt",
+        "state": "No"
+    },
+    {
+        "id": 32,
+        "tadig": "ARMOR",
+        "policy": "Packet switched data charging policy",
+        "state": "n/a"
+    },
+    {
+        "id": 33,
+        "tadig": "ARMOR",
+        "policy": "Minimum charge is applied per partial",
+        "state": "No"
+    },
+    {
+        "id": 34,
+        "tadig": "ARMOR",
+        "policy": "Minimum charge applies for zero volume",
+        "state": "No"
+    },
+    {
+        "id": 35,
+        "tadig": "ARMOR",
+        "policy": "TAP partials are independently rated and rounded",
+        "state": "No"
+    },
+    {
+        "id": 36,
+        "tadig": "ARMOR",
+        "policy": "Number of TAP partials generated per 24 hours per PDP context",
+        "state": "0"
+    },
+    {
+        "id": 37,
+        "tadig": "ARMOR",
+        "policy": "Data session setup attempt not available",
+        "state": null
+    },
+    {
+        "id": 38,
+        "tadig": "ARMOR",
+        "policy": "VoLTE not available",
+        "state": null
+    }
+]

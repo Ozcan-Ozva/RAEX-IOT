@@ -1,0 +1,16 @@
+[
+  {
+    "id": 6,
+    "tadig": "ARMOR",
+    "iot_currency": "EUR",
+    "tax_name": "Simple TAx",
+    "tax_is_vat": "VAR",
+    "tax_can_be_recovered": "Taxes are not applicable",
+    "apply_tax_by_default": "true",
+    "tax_type": "Amazing",
+    "rate_type": "Percentage",
+    "tax_rate": "15 %",
+    "tax_on_tax": "Taxes are not applicable",
+    "vpmn_markup": "Taxes are not applicable"
+  }
+]
