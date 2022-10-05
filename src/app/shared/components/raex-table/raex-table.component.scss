@@ -148,7 +148,7 @@ $table-border-color: #FAEBD7;
 
             &:nth-of-type(even) {
                 @media (min-width: $bp-bart) {
-                    background-color: rgba(0, 0, 0, .12);
+                    background-color: rgba(0, 0, 0, .13);
                 }
             }
         }
