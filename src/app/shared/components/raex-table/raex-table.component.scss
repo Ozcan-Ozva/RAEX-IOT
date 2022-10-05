@@ -1,208 +1,102 @@
-$bp-maggie: 15em;
-$bp-lisa: 30em;
-$bp-bart: 48em;
-$bp-marge: 62em;
-$bp-homer: 75em;
 $th-background-color: #F07E59;
 $table-border-color: #FAEBD7;
 
-.container {
-    margin: 5% 3%;
+$breakpoint-alpha: 480px; // adjust to your needs
 
-    @media (min-width: $bp-bart) {
-        margin: 2%;
+.rwd-table {
+  margin: 1em 0;
+  width: 100%;
+  
+  tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    display: none; // for accessibility, use a visually hidden method here instead! Thanks, reddit!   
+  }
+  
+  td {
+    display: block; 
+    
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
     }
 
-    @media (min-width: $bp-homer) {
-        margin: 2em auto;
-        max-width: $bp-homer;
+    &:before {
+      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+      font-weight: bold;
+
+      // optional stuff to make it look nicer
+      width: 6.5em; // magic number :( adjust according to your own content
+      display: inline-block;
+      // end options
+      
+      @media (min-width: $breakpoint-alpha) {
+        display: none;
+      }
     }
+  }
+  
+  th, td {
+    text-align: left;
+    
+    @media (min-width: $breakpoint-alpha) {
+      display: table-cell;
+      padding: .25em .5em;
+      
+      &:first-child {
+        padding-left: 0;
+      }
+      
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+  
+  
 }
 
-.responsive-table {
-    width: 100%;
-    margin-bottom: 1.5em;
-    border-spacing: 0;
 
-    @media (min-width: $bp-bart) {
-        font-size: .9em;
+// presentational styling
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+
+body {
+  padding: 0 2em;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: #eee;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #34495E;
+}
+
+.rwd-table {
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+  tr {
+    border-color: lighten(#34495E, 10%);
+  }
+  th, td {
+    margin: .5em 1em;
+    @media (min-width: $breakpoint-alpha) { 
+      padding: 1em !important; 
     }
-
-    @media (min-width: $bp-marge) {
-        font-size: 1em;
-    }
-
-    thead {
-        // Accessibly hide <thead> on narrow viewports
-        position: absolute;
-        clip: rect(1px 1px 1px 1px);
-        /* IE6, IE7 */
-        padding: 0;
-        border: 0;
-        height: 1px;
-        width: 1px;
-        overflow: hidden;
-
-        @media (min-width: $bp-bart) {
-            // Unhide <thead> on wide viewports
-            position: relative;
-            clip: auto;
-            height: auto;
-            width: auto;
-            overflow: auto;
-        }
-
-        th {
-            background-color: $th-background-color;
-            border: 1px solid $table-border-color;
-            font-weight: normal;
-            text-align: center;
-            color: white;
-
-            &:first-of-type {
-                text-align: left;
-            }
-        }
-    }
-
-    // Set these items to display: block for narrow viewports
-    tbody,
-    tr,
-    th,
-    td {
-        display: block;
-        padding: 0;
-        text-align: left;
-        white-space: normal;
-    }
-
-    tr {
-        @media (min-width: $bp-bart) {
-            // Undo display: block 
-            display: table-row;
-        }
-    }
-
-    th,
-    td {
-        padding: .5em;
-        vertical-align: middle;
-
-        @media (min-width: $bp-lisa) {
-            padding: .75em .5em;
-        }
-
-        @media (min-width: $bp-bart) {
-            // Undo display: block 
-            display: table-cell;
-            padding: .5em;
-        }
-
-        @media (min-width: $bp-marge) {
-            padding: .75em .5em;
-        }
-
-        @media (min-width: $bp-homer) {
-            padding: .75em;
-        }
-    }
-
-    caption {
-        margin-bottom: 1em;
-        font-size: 1em;
-        font-weight: bold;
-        text-align: center;
-
-        @media (min-width: $bp-bart) {
-            font-size: 1.5em;
-        }
-    }
-
-    tfoot {
-        font-size: .8em;
-        font-style: italic;
-
-        @media (min-width: $bp-marge) {
-            font-size: .9em;
-        }
-    }
-
-    tbody {
-        @media (min-width: $bp-bart) {
-            // Undo display: block 
-            display: table-row-group;
-        }
-
-        tr {
-            margin-bottom: 1em;
-
-            @media (min-width: $bp-bart) {
-                // Undo display: block 
-                display: table-row;
-                border-width: 1px;
-            }
-
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-
-            &:nth-of-type(even) {
-                @media (min-width: $bp-bart) {
-                    background-color: rgba(0, 0, 0, .13);
-                }
-            }
-        }
-
-        th[scope="row"] {
-            background-color: $th-background-color;
-            color: white;
-
-            @media (min-width: $bp-lisa) {
-                border-left: 1px solid $table-border-color;
-                border-bottom: 1px solid $table-border-color;
-            }
-
-            @media (min-width: $bp-bart) {
-                background-color: transparent;
-                color: rgba(0, 0, 0.87);
-                text-align: left;
-            }
-        }
-
-        td {
-            text-align: right;
-
-            @media (min-width: $bp-bart) {
-                border-left: 1px solid $table-border-color;
-                border-bottom: 1px solid $table-border-color;
-                text-align: center;
-            }
-
-            &:last-of-type {
-                @media (min-width: $bp-bart) {
-                    border-right: 1px solid $table-border-color;
-                }
-            }
-        }
-
-        td[data-type=currency] {
-            text-align: right;
-        }
-
-        td[data-title]:before {
-            content: attr(data-title);
-            float: left;
-            font-size: .8em;
-            color: rgba(0, 0, 0, .54);
-
-            @media (min-width: $bp-lisa) {
-                font-size: .9em;
-            }
-
-            @media (min-width: $bp-bart) {
-                // Don’t show data-title labels 
-                content: none;
-            }
-        }
-    }
+  }
+  th, td:before {
+    color: #dd5;
+  }
 }

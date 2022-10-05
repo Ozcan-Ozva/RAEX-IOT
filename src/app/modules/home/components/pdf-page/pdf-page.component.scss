@@ -11,6 +11,12 @@
     border-radius: 5px;
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+    @media (max-width: 800px) {
+        // Don’t show data-title labels 
+        width: 75vw;
+    }
+
     .page-header {
         display: flex;
         flex-wrap: nowrap;
