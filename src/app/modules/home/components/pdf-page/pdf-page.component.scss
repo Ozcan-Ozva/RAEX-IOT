@@ -26,6 +26,9 @@
         border-bottom: 1px solid;
         margin-top: 3vh;
         font-size: 0.9vw;
+        @media (max-width: 800px) {
+            font-size: 1.7vw;
+        }
     }
     .page-footer {
         position: absolute;
@@ -40,5 +43,8 @@
         border-top: 1px solid;
         margin-bottom: 2vh;
         font-size: 0.9vw;
+        @media (max-width: 800px) {
+            font-size: 1.9vw;
+        }
     }
 }

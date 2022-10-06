@@ -13,10 +13,16 @@ $font-color: #444444;
         font-size: 3vw;
         font-weight: 600;
         color: $font-color;
+        @media (max-width: 800px) {
+            font-size: 6vw;
+        }
     }
     .cover-icon {
         img{
             width: 10vw;
+            @media (max-width: 800px) {
+                width: 20vw;
+            }
         }
     }
     .cover-info {
@@ -33,11 +39,17 @@ $font-color: #444444;
                 font-size: 2vw;
                 font-weight: 600;
                 color: $font-color;
+                @media (max-width: 800px) {
+                    font-size: 4vw;
+                }
             }
             .info-description {
                 font-size: 2vw;
                 font-weight: 400;
                 color: $font-color;
+                @media (max-width: 800px) {
+                    font-size: 4vw;
+                }
             }
         }
     }
