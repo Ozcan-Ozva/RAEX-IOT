@@ -60,7 +60,10 @@ export class DestinationBandsComponent implements OnInit {
         destination_name: element.destination_name,
         cc: element.cc,
         area_code: element.area_code,
-        identifier: `${element.identifier_type} - ${element.identifier_number}`,
+        identifier: {
+          identifier_type: element.identifier_type,
+          identifier_number:  element.identifier_number,
+        } /* `${element.identifier_type} - ${element.identifier_number}` */,
         type: element.type
       });
     });
@@ -79,7 +82,10 @@ interface DisplayedDestinationBands {
     destination_name: string | undefined;
     cc: string | undefined;
     area_code: string | undefined;
-    identifier: string | undefined;
+    identifier: {
+      identifier_type: string | undefined;
+      identifier_number: string | undefined;
+    };
     type: string | undefined;
   }[];
 }

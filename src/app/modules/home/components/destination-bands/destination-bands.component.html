@@ -2,12 +2,37 @@
     <div class="destination-bands-container">
         <div class="destination-bands-header">Destination Bands</div>
         <div class="destination-bands-content">
-            <app-raex-table
+            <!-- <app-raex-table
              *ngFor="let destinationBand of displayedDestinationBandsGroup"
              [column_data]="columnData"
              [grid_data]="destinationBand.displayed_band_attribute"
              [table_title]="destinationBand.destination_band_name"
-             ></app-raex-table>
+             ></app-raex-table> -->
+             <div class="table-div" *ngFor="let destinationBand of displayedDestinationBandsGroup">
+                <h3>Destination band name: <span>{{destinationBand.destination_band_name}}</span></h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 30%; padding: 16px; text-align: left">Destination name</th>
+                            <th style="width:5%">CC</th>
+                            <th style="width:5%">Area Code</th>
+                            <th style="width:5%; border-right: 0">Identifier</th>
+                            <th style="width:5%;"></th>
+                            <th style="border-right: 0">Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let destinationBandAttribute of destinationBand.displayed_band_attribute">
+                            <th scope="row">{{destinationBandAttribute.destination_name}}</th>
+                            <th data-title="CC">{{destinationBandAttribute.cc}}</th>
+                            <th data-title="Area Code">{{destinationBandAttribute.area_code}}</th>
+                            <th style="border-right: 0" data-title="Identifier">{{destinationBandAttribute.identifier.identifier_type}}</th>
+                            <th data-title="">{{destinationBandAttribute.identifier.identifier_number}}</th>
+                            <th style="border-right: 0" data-title="Type">{{destinationBandAttribute.type}}</th>                            
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </app-pdf-page>

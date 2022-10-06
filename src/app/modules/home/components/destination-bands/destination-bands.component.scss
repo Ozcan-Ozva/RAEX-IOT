@@ -17,5 +17,35 @@ $font-color: #444444;
         flex-wrap: nowrap;
         row-gap: 1.5vh;
         margin-top: 1.5vh;
+
+        .table-div {
+            h3 {
+                @media (max-width: 800px) {
+                    font-size: 3.5vw;
+                }
+            }
+            table {
+                border-collapse: collapse;
+                @media (max-width: 800px) {
+                    font-size: 2vw;
+                }
+                thead {
+                    tr {
+                        th {
+                            border-bottom: 1px solid;
+                            border-right: 1px solid;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        th, td {
+                            border-right: 1px solid;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }

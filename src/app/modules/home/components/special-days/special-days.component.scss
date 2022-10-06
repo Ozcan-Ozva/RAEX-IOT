@@ -20,9 +20,7 @@ $font-color: #444444;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            border: 0.13rem solid #7655E6;
             padding: 1vh;
-            border-radius: 25px;
             .special-days-info-container {
                 display: flex;
                 flex-direction: row;
@@ -33,7 +31,6 @@ $font-color: #444444;
                     background-color: lighten($color: antiquewhite, $amount: 2);
                 }
                 .special-days-info-title {
-                    font-size: 1.2vw;
                     font-weight: 600;
                     color: $font-color;
                     @media (max-width: 800px) {
@@ -41,7 +38,6 @@ $font-color: #444444;
                     }
                 }
                 .special-days-info-value {
-                    font-size: 1.1vw;
                     color: $font-color;
                     @media (max-width: 800px) {
                         font-size: 2.2vw;
