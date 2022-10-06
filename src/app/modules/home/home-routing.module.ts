@@ -4,13 +4,8 @@ import { DocumentHeaderComponent } from './components/document-header/document-h
 import { HomeComponent } from './home.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
-  },
   { 
-    path: 'home',
+    path: '',
     component: HomeComponent,
   },
   { 
