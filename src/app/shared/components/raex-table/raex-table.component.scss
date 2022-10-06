@@ -10,6 +10,15 @@ $breakpoint-alpha: 480px; // adjust to your needs
   tr {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    &:nth-of-type(even) {
+      background-color: rgba(0,0,0,.12);
+    }
+    &:nth-of-type(odd) {
+      background-color: rgba(23, 22, 22, 0.12);
+    }
+    @media (max-width: 800px) {
+      font-size: 5vw;
+    }
   }
   
   th {
@@ -80,6 +89,10 @@ h1 {
   font-weight: normal;
   letter-spacing: -1px;
   color: #34495E;
+  text-align: center;
+  @media (max-width: 800px) {
+    font-size: 4.5vw;
+  }
 }
 
 .rwd-table {
