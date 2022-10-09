@@ -13,7 +13,7 @@ import { MtSms } from '../mt-sms/mt-sms';
 import { PsDataRatingInterval } from '../ps-data-rating-interval/ps-data-rating-interval';
 import { PsData } from '../ps-data/ps-data';
 
-export class Tading {
+export class Tadig {
     tadig: string | undefined;
     documentHeader: DocumentHeader | undefined;
     currencyAndTax: CurrencyTax[] = [];
@@ -38,39 +38,39 @@ export class Tading {
 
     
 
-    constructor(oTading: Partial<Tading>) {
-        this.tadig = oTading.tadig;
-        this.documentHeader = oTading.documentHeader == undefined ? undefined : new DocumentHeader(oTading.documentHeader);
-        this.currencyAndTax = oTading.currencyAndTax == undefined ? [] : CurrencyTax.fromArray(oTading.currencyAndTax);
-        this.specialDays = oTading.specialDays == undefined ? [] : SpecialDays.fromArray(oTading.specialDays);
-        this.timeBands = oTading.timeBands == undefined ? [] : TimeBands.fromArray(oTading.timeBands);
-        this.destinationBands = oTading.destinationBands == undefined ? [] : DestinationBands.fromArray(oTading.destinationBands);
-        this.apnBands = oTading.apnBands == undefined ? [] : ApnBands.fromArray(oTading.apnBands);
-        this.chargingPolicy = oTading.chargingPolicy == undefined ? [] : ChargingPolicy.fromArray(oTading.chargingPolicy);
-        this.mocRatingInterval = oTading.mocRatingInterval == undefined ? [] : MocRatingInterval.fromArray(oTading.mocRatingInterval);
-        this.mocCallTypes = oTading.mocCallTypes == undefined ? [] : MocCallTypes.fromArray(oTading.mocCallTypes);
-        this.mocDestinationBandCharging = oTading.mocDestinationBandCharging == undefined ? [] : MocDestinationBandCharging.fromArray(oTading.mocDestinationBandCharging);
-        this.mtcChargedAlwaysRatingInterval = oTading.mtcChargedAlwaysRatingInterval == undefined ? [] : (oTading.mtcChargedAlwaysRatingInterval);
-        this.mtcChargedReciprocatingRatingInterval = oTading.mtcChargedReciprocatingRatingInterval == undefined ? [] : (oTading.mtcChargedReciprocatingRatingInterval);
-        this.mtcCallTypes = oTading.mtcCallTypes == undefined ? [] : (oTading.mtcCallTypes);
-        this.mtcDestinationBandCharging = oTading.mtcDestinationBandCharging == undefined ? [] : (oTading.mtcDestinationBandCharging);
-        this.moSms = oTading.moSms == undefined ? [] : MoSms.fromArray(oTading.moSms);
-        this.mtSms = oTading.mtSms == undefined ? [] : MtSms.fromArray(oTading.mtSms);
-        this.psDataRatingInterval = oTading.psDataRatingInterval == undefined ? [] : PsDataRatingInterval.fromArray(oTading.psDataRatingInterval);
-        this.psData = oTading.psData == undefined ? [] : PsData.fromArray(oTading.psData);
-        this.wLanRatingInterval = oTading.wLanRatingInterval == undefined ? [] : (oTading.wLanRatingInterval);
-        this.wLan = oTading.wLan == undefined ? [] : (oTading.wLan);
+    constructor(oTadig: Partial<Tadig>) {
+        this.tadig = oTadig.tadig;
+        this.documentHeader = oTadig.documentHeader == undefined ? undefined : new DocumentHeader(oTadig.documentHeader);
+        this.currencyAndTax = oTadig.currencyAndTax == undefined ? [] : CurrencyTax.fromArray(oTadig.currencyAndTax);
+        this.specialDays = oTadig.specialDays == undefined ? [] : SpecialDays.fromArray(oTadig.specialDays);
+        this.timeBands = oTadig.timeBands == undefined ? [] : TimeBands.fromArray(oTadig.timeBands);
+        this.destinationBands = oTadig.destinationBands == undefined ? [] : DestinationBands.fromArray(oTadig.destinationBands);
+        this.apnBands = oTadig.apnBands == undefined ? [] : ApnBands.fromArray(oTadig.apnBands);
+        this.chargingPolicy = oTadig.chargingPolicy == undefined ? [] : ChargingPolicy.fromArray(oTadig.chargingPolicy);
+        this.mocRatingInterval = oTadig.mocRatingInterval == undefined ? [] : MocRatingInterval.fromArray(oTadig.mocRatingInterval);
+        this.mocCallTypes = oTadig.mocCallTypes == undefined ? [] : MocCallTypes.fromArray(oTadig.mocCallTypes);
+        this.mocDestinationBandCharging = oTadig.mocDestinationBandCharging == undefined ? [] : MocDestinationBandCharging.fromArray(oTadig.mocDestinationBandCharging);
+        this.mtcChargedAlwaysRatingInterval = oTadig.mtcChargedAlwaysRatingInterval == undefined ? [] : (oTadig.mtcChargedAlwaysRatingInterval);
+        this.mtcChargedReciprocatingRatingInterval = oTadig.mtcChargedReciprocatingRatingInterval == undefined ? [] : (oTadig.mtcChargedReciprocatingRatingInterval);
+        this.mtcCallTypes = oTadig.mtcCallTypes == undefined ? [] : (oTadig.mtcCallTypes);
+        this.mtcDestinationBandCharging = oTadig.mtcDestinationBandCharging == undefined ? [] : (oTadig.mtcDestinationBandCharging);
+        this.moSms = oTadig.moSms == undefined ? [] : MoSms.fromArray(oTadig.moSms);
+        this.mtSms = oTadig.mtSms == undefined ? [] : MtSms.fromArray(oTadig.mtSms);
+        this.psDataRatingInterval = oTadig.psDataRatingInterval == undefined ? [] : PsDataRatingInterval.fromArray(oTadig.psDataRatingInterval);
+        this.psData = oTadig.psData == undefined ? [] : PsData.fromArray(oTadig.psData);
+        this.wLanRatingInterval = oTadig.wLanRatingInterval == undefined ? [] : (oTadig.wLanRatingInterval);
+        this.wLan = oTadig.wLan == undefined ? [] : (oTadig.wLan);
     }
 
-    public static fromDTO(dto: any): Tading {
-        return new Tading({ ...dto });
+    public static fromDTO(dto: any): Tadig {
+        return new Tadig({ ...dto });
     }
 
-    public static fromArray(tadings: Partial<Tading>[]): Tading[] {
-        return tadings.map((tading) => new Tading(tading));
+    public static fromArray(tadigs: Partial<Tadig>[]): Tadig[] {
+        return tadigs.map((tadig) => new Tadig(tadig));
     }
 
-    public static fromDTOArray(dtos: any[]): Tading[] {
-        return dtos.map((dto) => Tading.fromDTO(dto));
+    public static fromDTOArray(dtos: any[]): Tadig[] {
+        return dtos.map((dto) => Tadig.fromDTO(dto));
     }
 }
