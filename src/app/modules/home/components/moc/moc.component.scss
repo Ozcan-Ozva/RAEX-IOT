@@ -1,0 +1,88 @@
+$font-color: #444444; 
+
+.moc-container {
+    padding: 3vh 0;
+    color: $font-color;
+    .moc-header {
+        font-size: 2vw;
+        font-weight: 600;
+        color: $font-color;
+        padding-bottom: 1.2vh;
+        @media (max-width: 800px) {
+            font-size: 4.3vw;
+        }
+    }
+    .moc-sub-header {
+        font-size: 1.5vw;
+        font-weight: 600;
+        color: $font-color;
+        padding-bottom: 1vh;
+        @media (max-width: 800px) {
+            font-size: 3.8vw;
+        }
+    }
+    .moc-rating-interval-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: center;
+        justify-content: center;
+        row-gap: 1vh;
+        padding-bottom: 1vh;
+
+        .ratig-interval-type {
+            color: $font-color;
+            font-weight: 600;
+        }
+        .ratig-interval-name {
+            color: $font-color;
+        }
+        .rating-interval-table {
+            color: $font-color;
+            .table-row {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                .table-column {
+                    display: flex;
+                    flex-direction: column;
+                    .title {
+                        border-bottom: 1px solid;
+                        padding-right: 1vw;
+                    }
+                    .value {
+
+                    }
+                }
+            }
+        }
+    }
+    .moc-call-types-section {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        row-gap: 1vh;
+        .title {
+            font-weight: 600;
+        }
+    }
+    .moc-destination-band-charging-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        row-gap: 2vh;
+        padding-top: 3vh;
+        .moc-destination-band-charging-content {
+            .destination-name {
+                padding-bottom: 1vh;
+            }
+            .moc-destination-band-charging-value {
+                .title {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

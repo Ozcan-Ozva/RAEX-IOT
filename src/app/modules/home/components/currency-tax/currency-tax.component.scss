@@ -1,8 +1,8 @@
 $font-color: #444444; 
 
-.document-header-container {
+.currency-tax-container {
     padding: 3vh 0;
-    .document-header {
+    .currency-tax-header {
         font-size: 2vw;
         font-weight: 600;
         color: $font-color;
@@ -10,17 +10,18 @@ $font-color: #444444;
             font-size: 4.3vw;
         }
     }
-    .document-header-content {
+    .currency-tax-content {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+        row-gap: 1.5vh;
         margin-top: 1.5vh;
-        .document-header-info {
+        .currency-tax-info {
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             padding: 1vh;
-            .document-header-info-container {
+            .currency-tax-info-container {
                 display: flex;
                 flex-direction: row;
                 align-content: center;
@@ -29,14 +30,14 @@ $font-color: #444444;
                 &:hover {
                     background-color: lighten($color: antiquewhite, $amount: 2);
                 }
-                .document-header-info-title {
+                .currency-tax-info-title {
                     font-weight: 600;
                     color: $font-color;
                     @media (max-width: 800px) {
                         font-size: 2.5vw;
                     }
                 }
-                .document-header-info-value {
+                .currency-tax-info-value {
                     color: $font-color;
                     @media (max-width: 800px) {
                         font-size: 2.2vw;

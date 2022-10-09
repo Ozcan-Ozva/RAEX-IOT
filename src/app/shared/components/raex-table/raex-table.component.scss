@@ -1,3 +1,35 @@
+.table-div {
+  h3 {
+      @media (max-width: 800px) {
+          font-size: 3.5vw;
+      }
+  }
+  table {
+      border-collapse: collapse;
+      @media (max-width: 800px) {
+          font-size: 2vw;
+      }
+      thead {
+          tr {
+              th {
+                  border-bottom: 1px solid;
+                  border-right: 1px solid;
+                  padding-right: 0.5vw;
+              }
+          }
+      }
+      tbody {
+          tr {
+              th, td {
+                  border-right: 1px solid;
+                  padding-right: 0.5vw;
+              }
+          }
+      }
+  }
+}
+
+
 /* $th-background-color: #F07E59;
 $table-border-color: #FAEBD7;
 

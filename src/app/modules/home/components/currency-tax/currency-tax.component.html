@@ -1,0 +1,52 @@
+<app-pdf-page [pageFooterTitle]="'2'">
+    <div class="currency-tax-container">
+        <div class="currency-tax-header">Currency Info</div>
+        <div class="currency-tax-content">
+            <div *ngFor="let currency of currencyTaxs" class="curreny-object-div">
+                <!-- <div *ngFor="let data of currency | keyvalue" class="currency-tax-info">
+                    <div class="currency-tax-info-title">{{data.key}}</div>
+                    <div class="currency-tax-info-description">{{data.value}}</div>
+                </div> -->
+                <div class="currency-tax-info">
+                    <div class="currency-tax-info-container">
+                        <div class="currency-tax-info-title">IOT Currency: </div>
+                        <div class="currency-tax-info-value">{{currency.iot_currency}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="currency-tax-container">
+        <div class="currency-tax-header">Tax definition</div>
+        <div class="currency-tax-content">
+            <div *ngFor="let currency of currencyTaxs" class="curreny-object-div">
+                <div class="currency-tax-info">
+                    <div class="currency-tax-info-container">
+                        <div style="font-weight: 900;" class="currency-tax-info-title">Tax Name: </div>
+                        <div style="font-weight: 900;" class="currency-tax-info-value">{{currency.tax_name}}</div>
+                    </div>
+                    <div class="currency-tax-info-container">
+                        <div class="currency-tax-info-title">Tax is VAT: </div>
+                        <div class="currency-tax-info-value">{{currency.tax_is_vat}}</div>
+                    </div>
+                    <div class="currency-tax-info-container">
+                        <div class="currency-tax-info-title">Apply tax by default: </div>
+                        <div class="currency-tax-info-value">{{currency.apply_tax_by_default}}</div>
+                    </div>
+                    <div class="currency-tax-info-container">
+                        <div class="currency-tax-info-title">Tax type: </div>
+                        <div class="currency-tax-info-value">{{currency.tax_type}}</div>
+                    </div>
+                    <div class="currency-tax-info-container">
+                        <div class="currency-tax-info-title">Rate Type: </div>
+                        <div class="currency-tax-info-value">{{currency.rate_type}}</div>
+                    </div>
+                    <div class="currency-tax-info-container">
+                        <div class="currency-tax-info-title">Tax Rate: </div>
+                        <div class="currency-tax-info-value">{{currency.tax_rate}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-pdf-page>

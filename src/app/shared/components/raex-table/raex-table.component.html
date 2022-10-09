@@ -1,4 +1,20 @@
-<div class="container">
+<div class="table-div">
+    <h3>{{table_title}}</h3>
+    <table>
+        <thead>
+            <tr>
+                <th *ngFor="let key of column_data" scope="col">{{key.header}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let record of grid_data">
+                <th [attr.data-th]="key.header" *ngFor="let key of column_data">{{record[key.field]}}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- <div class="container">
     <h1>{{table_title}}</h1>
     <table class="rwd-table">
         <tr>
@@ -8,4 +24,4 @@
             <td [attr.data-th]="key.header" *ngFor="let key of column_data">{{record[key.field]}}</td>
         </tr>
 </table>
-</div>
+</div> -->

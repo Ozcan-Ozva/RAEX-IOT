@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SpecialDays } from 'src/app/models/special-days/special-days';
 import { SpecialDaysGateway } from 'src/app/services/gateways/special-days.service';
 
@@ -9,14 +9,23 @@ import { SpecialDaysGateway } from 'src/app/services/gateways/special-days.servi
 })
 export class SpecialDaysComponent implements OnInit {
 
-  specialDays: SpecialDays[] | undefined;
+  private _specialDays: SpecialDays[] = [];
+  @Input() set specialDays(value: SpecialDays[]) {
+    this._specialDays = value;
+    console.log(this.specialDays);
+  }
+  get specialDays(): SpecialDays[] {
+    return this._specialDays;
+  }
+
+  /* specialDays: SpecialDays[] | undefined; */
 
   constructor(private specialDayService: SpecialDaysGateway) { }
 
   ngOnInit(): void {
-    this.specialDayService.fetchAll().subscribe((data) => {
+    /* this.specialDayService.fetchAll().subscribe((data) => {
       this.specialDays = data;
-    })
+    }) */
   }
 
 }

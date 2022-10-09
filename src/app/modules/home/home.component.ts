@@ -1,4 +1,7 @@
+import { TadigGateway } from './../../services/gateways/tadig.service';
 import { Component, OnInit } from '@angular/core';
+import { Tadig } from 'src/app/models/tadig/tadig';
+import { DocumentHeader } from 'src/app/models/document-header/document-header';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public tadig: Tadig | undefined;
+
+  constructor(private tadigGateway: TadigGateway) { }
 
   ngOnInit(): void {
+    this.tadigGateway.fetchOne()
+    .subscribe((data) => {
+      console.log(data);
+      this.tadig = data;
+    })
   }
 
   scrollToElement($element: any): void {

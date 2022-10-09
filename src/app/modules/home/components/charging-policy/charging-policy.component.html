@@ -1,0 +1,15 @@
+<app-pdf-page [pageFooterTitle]="'2'">
+    <div class="charging-policy-container">
+        <div class="charging-policy-header">Charging Policy</div>
+        <div class="charging-policy-content">
+            <div *ngFor="let charginhPolicy of charginhPolicies" class="curreny-object-div">
+                <div class="charging-policy-info">
+                    <div class="charging-policy-info-container">
+                        <div class="charging-policy-info-title">{{charginhPolicy.policy}}: </div>
+                        <div class="charging-policy-info-value">{{charginhPolicy.state}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-pdf-page>

@@ -1,9 +1,19 @@
 <div class="container">
     <app-cover></app-cover>
     <app-table-of-content></app-table-of-content>
-    <app-document-header></app-document-header>
-    <app-special-days></app-special-days>
-    <app-destination-bands></app-destination-bands>
+    <app-document-header [documentHeader]="tadig?.documentHeader"></app-document-header>
+    <app-currency-tax [currencyTaxs]="tadig == undefined ? [] : tadig.currencyAndTax"></app-currency-tax>
+    <app-time-bands [timeBands]="tadig == undefined ? [] : tadig.timeBands"></app-time-bands>
+    <app-special-days [specialDays]="tadig == undefined ? [] : tadig.specialDays"></app-special-days>
+    <app-destination-bands [destinationBands]="tadig == undefined ? [] : tadig.destinationBands">
+    </app-destination-bands>
+    <app-apn-bands [apnBands]="tadig == undefined ? [] : tadig.apnBands"></app-apn-bands>
+    <app-charging-policy [charginhPolicies]="tadig == undefined ? [] : tadig.chargingPolicy"></app-charging-policy>
+    <app-moc
+     [mocRatingIntervals]="tadig == undefined ? [] : tadig.mocRatingInterval"
+     [mocCallTypes]="tadig == undefined ? [] : tadig.mocCallTypes"
+     [mocDestinationBandCharging]="tadig == undefined ? [] : tadig.mocDestinationBandCharging"
+     ></app-moc>
     <app-pdf-page></app-pdf-page>
     <!-- <button (click)="scrollToElement(target)"></button>
     <app-cover></app-cover>

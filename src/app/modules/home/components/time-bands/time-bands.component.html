@@ -1,0 +1,13 @@
+<app-pdf-page [pageFooterTitle]="'4'">
+    <div class="time-bands-container">
+        <div class="time-bands-header">Time Bands</div>
+        <div class="time-bands-content">
+            <app-raex-table
+             *ngFor="let timeBand of displayedTimeBandsGroup"
+             [column_data]="columnData"
+             [grid_data]="timeBand.displayed_band_attribute"
+             [table_title]="'Time band name: ' + timeBand.time_band_name"
+             ></app-raex-table>
+        </div>
+    </div>
+</app-pdf-page>

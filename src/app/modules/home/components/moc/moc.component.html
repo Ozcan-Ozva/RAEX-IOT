@@ -1,0 +1,71 @@
+<app-pdf-page [pageFooterTitle]="'2'">
+    <div class="moc-container">
+        <div class="moc-header">Call Types</div>
+        <div class="moc-sub-header">MOC</div>
+        <div *ngFor="let mocRatingInterval of mocRatingIntervals" class="moc-rating-interval-section">
+            <div class="ratig-interval-type">{{mocRatingInterval.rating_interval_type}}</div>
+            <div class="ratig-interval-name">Rating interval name: {{mocRatingInterval.rating_interval_name}}</div>
+            <div class="rating-interval-table">
+                <div class="table-row">
+                    <div class="table-column">
+                        <div class="title">Interval length</div>
+                        <div class="value">{{mocRatingInterval.interval_length}}</div>
+                    </div>
+                    <div class="table-column">
+                        <div class="title">Repetition factor</div>
+                        <div class="value">{{mocRatingInterval.repetition_factor}}</div>
+                    </div>
+                    <div class="table-column">
+                        <div class="title"> Initial period not charged</div>
+                        <div class="value">{{mocRatingInterval.initial_period_not_charged}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="displayedDisplayedMocCallTypes!= undefined" class="moc-call-types-section">
+            <div class="normalized-pricing-definition"><span class="title">Normalized Pricing Definition:</span> {{displayedDisplayedMocCallTypes.normalized_pricing_definition}}</div>
+            <div class="services"><span class="title">Services:</span> {{displayedDisplayedMocCallTypes.services}}</div>
+            <div class="location"><span class="title">Location:</span> {{displayedDisplayedMocCallTypes.location}}</div>
+        </div>
+        <div class="moc-destination-band-charging-section">
+            <div *ngFor="let mocDestinationBandCharge of mocDestinationBandCharging" class="moc-destination-band-charging-content">
+                <div class="destination-name moc-destination-band-charging-value">
+                    <span class="title">Destination band:</span>
+                    {{mocDestinationBandCharge.destination_band}}
+                </div>
+                <div class="moc-destination-band-charging-value">
+                    <span class="title">CTL 1:</span>
+                    {{mocDestinationBandCharge.ctl1}}
+                </div>
+                <div class="moc-destination-band-charging-value">
+                    <span class="title">IAC:</span>
+                    {{mocDestinationBandCharge.iac}}
+                </div>
+                <div class="moc-destination-band-charging-value">
+                    <span class="title">Timeband:</span>
+                    {{mocDestinationBandCharge.timeband}}
+                </div>
+                <div class="moc-destination-band-charging-value">
+                    <span class="title">Charge type:</span>
+                    {{mocDestinationBandCharge.charge_type}}
+                </div>
+                <div class="moc-destination-band-charging-value">
+                    <span class="title">Rating interval name:</span>
+                    {{mocDestinationBandCharge.rating_interval_name}}
+                </div>
+                <div class="moc-destination-band-charging-value">
+                    <span class="title">Rate:</span>
+                    {{mocDestinationBandCharge.rate}}
+                </div>
+                <div class="moc-destination-band-charging-value">
+                    <span class="title">Fixed charge:</span>
+                    {{mocDestinationBandCharge.fixed_charge}}
+                </div>
+                <div class="moc-destination-band-charging-value">
+                    <span class="title">Applicable taxes:</span>
+                    {{mocDestinationBandCharge.applicable_taxes}}
+                </div>
+            </div>
+        </div>
+    </div>
+</app-pdf-page>

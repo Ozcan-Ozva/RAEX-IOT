@@ -1,0 +1,21 @@
+$font-color: #444444; 
+
+
+.time-bands-container {
+    padding: 3vh 0;
+    .time-bands-header {
+        font-size: 2vw;
+        font-weight: 600;
+        color: $font-color;
+        @media (max-width: 800px) {
+            font-size: 4.3vw;
+        }
+    }
+    .time-bands-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 1.5vh;
+        margin-top: 1.5vh;
+    }
+}
