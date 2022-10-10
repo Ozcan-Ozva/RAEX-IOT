@@ -1,4 +1,4 @@
-$font-color: #444444; 
+$font-color: black; 
 
 
 .destination-bands-container {
@@ -20,12 +20,16 @@ $font-color: #444444;
 
         .table-div {
             h3 {
+                font-size: 1vw;
                 @media (max-width: 800px) {
-                    font-size: 3.5vw;
+                    font-size: 2.5vw;
                 }
             }
             table {
                 border-collapse: collapse;
+                font-size: 0.85vw;
+                font-weight: 400;
+                text-align: left;
                 @media (max-width: 800px) {
                     font-size: 2vw;
                 }
