@@ -1,0 +1,73 @@
+<app-pdf-page [pageFooterTitle]="'2'">
+    <div class="mtc-container">
+        <div class="mtc-header">Call Types</div>
+        <div class="mtc-sub-header">MTC (Charged reciprocating)</div>
+        <div *ngFor="let mtcRatingInterval of mtcRatingIntervals" class="mtc-rating-interval-section">
+            <div class="ratig-interval-type">{{mtcRatingInterval.rating_interval_type}}</div>
+            <div class="ratig-interval-name">Rating interval name: {{mtcRatingInterval.rating_interval_name}}</div>
+            <div class="rating-interval-table">
+                <div class="table-row">
+                    <div class="table-column">
+                        <div class="title">Interval length</div>
+                        <div class="value">{{mtcRatingInterval.interval_length}}</div>
+                    </div>
+                    <div class="table-column">
+                        <div class="title">Repetition factor</div>
+                        <div class="value">{{mtcRatingInterval.repetition_factor}}</div>
+                    </div>
+                    <div class="table-column">
+                        <div class="title"> Initial period not charged</div>
+                        <div class="value">{{mtcRatingInterval.initial_period_not_charged}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="displayedDisplayedMtcCallTypes!= undefined" class="mtc-call-types-section">
+            <div class="normalized-pricing-definition"><span class="title">Normalized Pricing Definition:</span> {{displayedDisplayedMtcCallTypes.normalized_pricing_definition}}</div>
+            <div class="services"><span class="title">Services:</span> {{displayedDisplayedMtcCallTypes.services}}</div>
+            <div class="location"><span class="title">Location:</span> {{displayedDisplayedMtcCallTypes.location}}</div>
+        </div>
+        <div class="mtc-destination-band-charging-section">
+            <div *ngFor="let mtcDestinationBandCharge of mtcDestinationBandCharging" class="mtc-destination-band-charging-content">
+                <div class="destination-name mtc-destination-band-charging-value">
+                    <span class="title">Destination band:</span>
+                    <!-- {{mtcDestinationBandCharge.destination_band}} -->
+                </div>
+                <div class="mtc-destination-band-charging-value">
+                    <span class="title">CTL 1:</span>
+                    {{mtcDestinationBandCharge.ctl1}},
+                    <span class="title">CTL 2:</span>
+                    {{mtcDestinationBandCharge.ctl2}},
+                    <span class="title">CTL 2:</span>
+                    {{mtcDestinationBandCharge.ctl1}},
+                    <span class="title">CTL details:</span>
+                    {{mtcDestinationBandCharge.ctl_details}}
+                </div>
+                <div class="mtc-destination-band-charging-value">
+                    <span class="title">Timeband:</span>
+                    {{mtcDestinationBandCharge.timeband}}
+                </div>
+                <div class="mtc-destination-band-charging-value">
+                    <!-- <span class="title">Charge type:</span> -->
+                    {{mtcDestinationBandCharge.charge_base}}
+                </div>
+                <div class="mtc-destination-band-charging-value">
+                    <span class="title">Charge type:</span>
+                    {{mtcDestinationBandCharge.charge_type}}
+                </div>
+                <div class="mtc-destination-band-charging-value">
+                    <span class="title">Rating interval name:</span>
+                    {{mtcDestinationBandCharge.rating_interval_name}}
+                </div>
+                <div class="mtc-destination-band-charging-value">
+                    <span class="title">Rate:</span>
+                    {{mtcDestinationBandCharge.rate}}
+                </div>
+                <div class="mtc-destination-band-charging-value">
+                    <span class="title">Applicable taxes:</span>
+                    {{mtcDestinationBandCharge.applicable_taxes}}
+                </div>
+            </div>
+        </div>
+    </div>
+</app-pdf-page>

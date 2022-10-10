@@ -12,6 +12,9 @@ import { MoSms } from '../mo-sms/mo-sms';
 import { MtSms } from '../mt-sms/mt-sms';
 import { PsDataRatingInterval } from '../ps-data-rating-interval/ps-data-rating-interval';
 import { PsData } from '../ps-data/ps-data';
+import { MtcChargedReciprocatingRatingInterval } from '../mtc-charged-always-rating-interval/mtc-charged-always-rating-interval';
+import { MtcCallTypes } from '../mtc-call-types/mtc-call-types';
+import { MtcDestinationBandCharging } from '../mtc-destination-band-charging/mtc-destination-band-charging';
 
 export class Tadig {
     tadig: string | undefined;
@@ -26,9 +29,9 @@ export class Tadig {
     mocCallTypes: MocCallTypes[] = [];
     mocDestinationBandCharging: MocDestinationBandCharging[] = [];
     mtcChargedAlwaysRatingInterval: any[] = [];
-    mtcChargedReciprocatingRatingInterval: any[] = [];
-    mtcCallTypes: any[] = [];
-    mtcDestinationBandCharging: any[] = [];
+    mtcChargedReciprocatingRatingInterval: MtcChargedReciprocatingRatingInterval[] = [];
+    mtcCallTypes: MtcCallTypes[] = [];
+    mtcDestinationBandCharging: MtcDestinationBandCharging[] = [];
     moSms: MoSms[] = [];
     mtSms: MtSms[] = [];
     psDataRatingInterval: PsDataRatingInterval[] = [];

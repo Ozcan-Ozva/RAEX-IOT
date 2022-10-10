@@ -1,0 +1,87 @@
+<app-pdf-page [pageFooterTitle]="'2'">
+    <div class="ps-data-container">
+        <div class="ps-data-header">PsData</div>
+        <div *ngFor="let psRatingInterval of psDataRatingInterval" class="ps-data-rating-interval-section">
+            <div class="ratig-interval-type">{{psRatingInterval.rating_interval_type}}</div>
+            <div class="ratig-interval-name">Rating interval name: {{psRatingInterval.rating_interval_name}}</div>
+            <div class="rating-interval-table">
+                <div class="table-row">
+                    <div class="table-column">
+                        <div class="title">Interval length</div>
+                        <div class="value">{{psRatingInterval.interval_length}}</div>
+                    </div>
+                    <div class="table-column">
+                        <div class="title">Repetition factor</div>
+                        <div class="value">{{psRatingInterval.repetition_factor}}</div>
+                    </div>
+                    <div class="table-column">
+                        <div class="title"> Initial period not charged</div>
+                        <div class="value">{{psRatingInterval.initial_period_not_charged}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ps-data-destination-band-charging-section">
+            <div *ngFor="let psD of psData" class="ps-data-destination-band-charging-content">
+                <div class="destination-name ps-data-destination-band-charging-value">
+                    <span class="title">Normalized pricing definition:</span>
+                    {{psD.normalized_volume_pricing_definition}}
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">Location:</span>
+                    {{psD.location}}
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">ABN band:</span>
+                    {{psD.apn_band}}
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">CTL 1:</span>
+                    {{psD.ctl1}},
+                    <span class="title">CTL 2:</span>
+                    {{psD.ctl2}},
+                    <span class="title">CTL 2:</span>
+                    {{psD.ctl1}},
+                    <span class="title">CTL details:</span>
+                    {{psD.ctl_details}}
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">Timeband:</span>
+                    <!-- {{psD.timeband}} -->
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">Fix:</span>
+                    <!-- {{psD.charge_base}} -->
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">Rate:</span>
+                    <!-- {{psD.charge_type}} -->
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">Applicable taxes:</span>
+                    <!-- {{psD.rating_interval_name}} -->
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">Total:</span>
+                    <!-- {{psD.rate}} -->
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">Degressive:</span>
+                    <!-- {{psD.rate}} -->
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">Rating interval name:</span>
+                    <!-- {{psD.rate}} -->
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">Rate:</span>
+                    <!-- {{psD.rate}} -->
+                </div>
+                <div class="ps-data-destination-band-charging-value">
+                    <span class="title">Applicable taxes:</span>
+                    <!-- {{psD.applicable_taxes}} -->
+                </div>
+            </div>
+        </div>
+    </div>
+</app-pdf-page>

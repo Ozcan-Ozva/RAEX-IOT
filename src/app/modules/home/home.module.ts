@@ -16,6 +16,10 @@ import { TimeBandsComponent } from './components/time-bands/time-bands.component
 import { ApnBandsComponent } from './components/apn-bands/apn-bands.component';
 import { ChargingPolicyComponent } from './components/charging-policy/charging-policy.component';
 import { MOCComponent } from './components/moc/moc.component';
+import { MtcComponent } from './components/mtc/mtc.component';
+import { MosmsComponent } from './components/mosms/mosms.component';
+import { MtsmsComponent } from './components/mtsms/mtsms.component';
+import { PsDataComponent } from './components/ps-data/ps-data.component';
 
 
 @NgModule({
@@ -30,7 +34,11 @@ import { MOCComponent } from './components/moc/moc.component';
     TimeBandsComponent,
     ApnBandsComponent,
     ChargingPolicyComponent,
-    MOCComponent
+    MOCComponent,
+    MtcComponent,
+    MosmsComponent,
+    MtsmsComponent,
+    PsDataComponent
   ],
   imports: [
     CommonModule,

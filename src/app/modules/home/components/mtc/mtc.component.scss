@@ -1,9 +1,9 @@
 $font-color: #444444; 
 
-.moc-container {
+.mtc-container {
     padding: 3vh 0;
     color: $font-color;
-    .moc-header {
+    .mtc-header {
         font-size: 2vw;
         font-weight: 600;
         color: $font-color;
@@ -12,7 +12,7 @@ $font-color: #444444;
             font-size: 4.3vw;
         }
     }
-    .moc-sub-header {
+    .mtc-sub-header {
         font-size: 1.5vw;
         font-weight: 600;
         color: $font-color;
@@ -21,7 +21,7 @@ $font-color: #444444;
             font-size: 3.8vw;
         }
     }
-    .moc-rating-interval-section {
+    .mtc-rating-interval-section {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -69,7 +69,7 @@ $font-color: #444444;
             }
         }
     }
-    .moc-call-types-section {
+    .mtc-call-types-section {
         display: flex;
         flex-direction: column;
         align-content: flex-start;
@@ -81,21 +81,21 @@ $font-color: #444444;
             font-weight: 600;
         }
     }
-    .moc-destination-band-charging-section {
+    .mtc-destination-band-charging-section {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: flex-start;
         row-gap: 2vh;
         padding-top: 3vh;
-        .moc-destination-band-charging-content {
+        .mtc-destination-band-charging-content {
             .destination-name {
                 padding-bottom: 1vh;
                 @media (max-width: 800px) {
                     font-size: 2.5vw;
                 }
             }
-            .moc-destination-band-charging-value {
+            .mtc-destination-band-charging-value {
                 @media (max-width: 800px) {
                     font-size: 2.5vw;
                 }

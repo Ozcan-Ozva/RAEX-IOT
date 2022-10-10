@@ -1,0 +1,49 @@
+$font-color: #444444; 
+
+.mosms-container {
+    padding: 3vh 0;
+    .mosms-header {
+        font-size: 2vw;
+        font-weight: 600;
+        color: $font-color;
+        @media (max-width: 800px) {
+            font-size: 4.3vw;
+        }
+    }
+    .mosms-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 1.5vh;
+        margin-top: 1.5vh;
+        .mosms-info {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            padding: 1vh;
+            .mosms-info-container {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                align-items: center;
+                column-gap: 1vh;
+                &:hover {
+                    background-color: lighten($color: antiquewhite, $amount: 2);
+                }
+                .mosms-info-title {
+                    font-weight: 600;
+                    color: $font-color;
+                    @media (max-width: 800px) {
+                        font-size: 2.5vw;
+                    }
+                }
+                .mosms-info-value {
+                    color: $font-color;
+                    @media (max-width: 800px) {
+                        font-size: 2.2vw;
+                    }
+                }
+            }
+        }
+    }
+}

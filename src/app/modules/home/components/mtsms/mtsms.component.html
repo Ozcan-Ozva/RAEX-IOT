@@ -1,0 +1,33 @@
+<app-pdf-page [pageFooterTitle]="'3'">
+    <div class="mtsms-container">
+        <div class="mtsms-header">Mtsms</div>
+        <div class="mtsms-content">
+            <div *ngFor="let data of mtSms" class="mtsms-info">
+                <div class="mtsms-info-container">
+                    <div class="mtsms-info-title">charging: </div>
+                    <div class="mtsms-info-value">{{data.charging}}</div>
+                </div>
+                <div class="mtsms-info-container">
+                    <div class="mtsms-info-title">Location: </div>
+                    <div class="mtsms-info-value">{{data.location}}</div>
+                </div>
+                <div class="mtsms-info-container">
+                    <div class="mtsms-info-title">Timeband: </div>
+                    <div class="mtsms-info-value">{{data.timeband}}</div>
+                </div>
+                <div class="mtsms-info-container">
+                    <div class="mtsms-info-title">Fix charge: </div>
+                    <div class="mtsms-info-value">{{data.fixed_charge}}</div>
+                </div>
+                <div class="mtsms-info-container">
+                    <div class="mtsms-info-title">Applicable taxes: </div>
+                    <div class="mtsms-info-value">{{data.applicable_taxes}}</div>
+                </div>
+                <div class="mtsms-info-container">
+                    <div class="mtsms-info-title">Reciprocal Description: </div>
+                    <div class="mtsms-info-value">{{data.reciprocal_description}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-pdf-page>

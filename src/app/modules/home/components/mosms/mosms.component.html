@@ -1,0 +1,39 @@
+<app-pdf-page [pageFooterTitle]="'3'">
+    <div class="mosms-container">
+        <div class="mosms-header">Mosms</div>
+        <div class="mosms-content">
+            <div *ngFor="let data of moSms" class="mosms-info">
+                <div class="mosms-info-container">
+                    <div class="mosms-info-title">Location: </div>
+                    <div class="mosms-info-value">{{data.location}}</div>
+                </div>
+                <div class="mosms-info-container">
+                    <div class="mosms-info-title">Destination band: </div>
+                    <div class="mosms-info-value">{{data.destination_band}}</div>
+                </div>
+                <div class="mosms-info-container">
+                    <div class="mosms-info-title">CTL 1: </div>
+                    <div class="mosms-info-value">{{data.ctl1}}, </div>
+                    <div class="mosms-info-title">CTL 2: </div>
+                    <div class="mosms-info-value">{{data.ctl2}}, </div>
+                    <div class="mosms-info-title">CTL 3: </div>
+                    <div class="mosms-info-value">{{data.ctl3}}, </div>
+                    <div class="mosms-info-title">CTL details: </div>
+                    <div class="mosms-info-value">{{data.ctl_details}}</div>
+                </div>
+                <div class="mosms-info-container">
+                    <div class="mosms-info-title">Timeband: </div>
+                    <div class="mosms-info-value">{{data.timeband}}</div>
+                </div>
+                <div class="mosms-info-container">
+                    <div class="mosms-info-title">Fix charge: </div>
+                    <div class="mosms-info-value">{{data.fixed_charge}}</div>
+                </div>
+                <div class="mosms-info-container">
+                    <div class="mosms-info-title">Applicable taxes: </div>
+                    <div class="mosms-info-value">{{data.applicable_taxes}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-pdf-page>

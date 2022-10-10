@@ -10,6 +10,8 @@ import { ReadingJsonService } from '../read-json.service';
     getOnePost: (id: number) => `posts/${id}/getOnePost`,
 }; */
 
+/* const jsonFilePath = 'assets/jsonFiles/RUSNW.json'; */
+/* const jsonFilePath = 'assets/jsonFiles/LBNFL.json'; */
 const jsonFilePath = 'assets/jsonFiles/armor.json';
 
 @Injectable()
@@ -24,6 +26,6 @@ export class TadigGateway {
   fetchOne() : Observable<Tadig> {
     return this.readingJsonService
       .getJSON(jsonFilePath)
-      .pipe(map((data) => Tadig.fromDTO(data)));
+      .pipe(map((data) => Tadig.fromDTO(data.data)));
   }
 }
