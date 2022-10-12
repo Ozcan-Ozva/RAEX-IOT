@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+.dialog-container {
+    height: 100%;
+    padding: 2.5rem;
+    display: flex;
+    pointer-events: none;
+
+    :first-child {
+        pointer-events: all;
+    }
+}
+
+.dialog-panel {
+    pointer-events: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.dialog-backdrop {
+    background-color: #000000a0;
+}

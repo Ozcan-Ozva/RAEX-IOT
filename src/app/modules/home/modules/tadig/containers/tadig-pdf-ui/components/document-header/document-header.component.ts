@@ -1,6 +1,7 @@
 import { DocumentHeader } from '../../../../../../../../models/document-header/document-header';
 import { Component, Input, OnInit } from '@angular/core';
-import { ReadingJsonService } from 'src/app/services/read-json.service';
+import { Dialog } from 'src/app/shared/dialog/dialog.service';
+import { EditFieldDialogComponent } from '../edit-field-dialog/edit-field-dialog.component';
 
 @Component({
   selector: 'app-document-header',
@@ -17,17 +18,27 @@ export class DocumentHeaderComponent implements OnInit {
     return this._documentHeader === undefined ? undefined : this._documentHeader;
   }
 
- /*  public documentHeader: DocumentHeader | undefined */;
-
-  constructor(public readingJsonService: ReadingJsonService) { }
+  constructor(public dialog: Dialog) { }
 
   ngOnInit(): void {
-    /* this.readingJsonService.getJSON('assets/jsonFiles/documentHeader.json')
-    .subscribe((data) => {
-      console.log(data);
-      this.documentHeader = data;
-      console.log(this.documentHeader);
-    }) */
+  }
+
+  editField() {
+    this.dialog
+      .open<any, any>(
+        EditFieldDialogComponent,
+        {},
+        {
+          message: 'Hello this work'
+        }
+      )
+      .result.pipe()
+      .subscribe((result: any) => {
+        if (!result.canceled) {
+          console.log('Yes');
+          console.log(result);
+        }
+      });
   }
 
 }

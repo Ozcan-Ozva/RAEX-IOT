@@ -16,6 +16,9 @@ import { SpecialDaysComponent } from './components/special-days/special-days.com
 import { TableOfContentComponent } from './components/table-of-content/table-of-content.component';
 import { TimeBandsComponent } from './components/time-bands/time-bands.component';
 import { SharedComponentsModule } from 'src/app/shared/components/shared-components.module';
+import { EditFieldDialogComponent } from './components/edit-field-dialog/edit-field-dialog.component';
+import { DialogModule } from 'src/app/shared/dialog/dialog.module';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 
 @NgModule({
@@ -34,11 +37,14 @@ import { SharedComponentsModule } from 'src/app/shared/components/shared-compone
     MtcComponent,
     MosmsComponent,
     MtsmsComponent,
-    PsDataComponent
+    PsDataComponent,
+    EditFieldDialogComponent
   ],
   imports: [
     CommonModule,
     SharedComponentsModule,
+    DialogModule,
+    OverlayModule,
   ]
 })
 export class TadigPDFUIModule { }

@@ -3,7 +3,7 @@
         <div class="document-header">Document Header</div>
         <div class="document-header-content">
             <div *ngFor="let data of documentHeader | keyvalue" class="document-header-info">
-                <div class="document-header-info-container">
+                <div (click)="editField()" class="document-header-info-container">
                     <div class="document-header-info-title">{{data.key}}: </div>
                     <div class="document-header-info-value">{{data.value}}</div>
                 </div>
