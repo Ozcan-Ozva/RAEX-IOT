@@ -1,21 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DocumentHeaderComponent } from './components/document-header/document-header.component';
 import { HomeComponent } from './home.component';
 
 const routes: Routes = [
-  { 
-    path: '',
-    component: HomeComponent,
+  {
+    path: 'tadig',
+    loadChildren: () =>
+      import('./modules/tadig/tadig.module').then(
+        (module) => module.TadigModule
+      ),
   },
-  { 
-    path: 'document-header',
-    component: DocumentHeaderComponent,
-  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class HomeRoutingModule { }
+export class HomeRoutingModule {}

@@ -1,4 +1,4 @@
-import { DocumentHeader } from './../../../../models/document-header/document-header';
+import { DocumentHeader } from '../../../../../../../../models/document-header/document-header';
 import { Component, Input, OnInit } from '@angular/core';
 import { ReadingJsonService } from 'src/app/services/read-json.service';
 

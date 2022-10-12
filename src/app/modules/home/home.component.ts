@@ -10,16 +10,9 @@ import { DocumentHeader } from 'src/app/models/document-header/document-header';
 })
 export class HomeComponent implements OnInit {
 
-  public tadig: Tadig | undefined;
-
-  constructor(private tadigGateway: TadigGateway) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.tadigGateway.fetchOne()
-    .subscribe((data) => {
-      console.log(data);
-      this.tadig = data;
-    })
   }
 
   scrollToElement($element: any): void {

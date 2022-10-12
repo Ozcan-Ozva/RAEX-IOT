@@ -12,7 +12,12 @@ import { ReadingJsonService } from '../read-json.service';
 
 /* const jsonFilePath = 'assets/jsonFiles/RUSNW.json'; */
 /* const jsonFilePath = 'assets/jsonFiles/LBNFL.json'; */
-const jsonFilePath = 'assets/jsonFiles/armor.json';
+const jsonFilePath = [
+  'assets/jsonFiles/armor.json',
+  'assets/jsonFiles/LBNFL.json',
+  'assets/jsonFiles/RUSNW.json',
+  'assets/jsonFiles/LBNLC.json',
+];
 
 @Injectable()
 export class TadigGateway {
@@ -23,9 +28,9 @@ export class TadigGateway {
       .getJSON(jsonFilePath)
       .pipe(map((data) => DestinationBands.fromDTOArray(data)));
   } */
-  fetchOne() : Observable<Tadig> {
+  fetchOne(id: number) : Observable<Tadig> {
     return this.readingJsonService
-      .getJSON(jsonFilePath)
+      .getJSON(jsonFilePath[id])
       .pipe(map((data) => Tadig.fromDTO(data.data)));
   }
 }

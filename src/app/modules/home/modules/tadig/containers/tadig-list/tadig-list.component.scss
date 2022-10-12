@@ -1,0 +1,105 @@
+.tadig-list-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    .table-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        @media (max-width: 800px) {
+            width: 90%;
+        }
+        h3 {
+            font-size: 2vw;
+            @media (max-width: 800px) {
+                font-size: 6.5vw;
+            }
+        }
+        table {
+            border-collapse: collapse;
+            font-size: 0.85vw;
+            font-weight: 400;
+            text-align: left;
+            border: 2px solid;
+            @media (max-width: 800px) {
+                font-size: 4vw;
+            }
+            thead {
+                tr {
+                    height: 4vh;
+                    th {
+                        border-bottom: 1px solid #E3E3E3;
+                        .input-container {
+                            border: 1px solid black;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            align-content: center;
+                            align-items: center;
+                            justify-content: center;
+                            .search-input {
+                                border: none;
+                                outline: none;
+                            }
+                            .search-icon {
+                                display: flex;
+                                flex-direction: column;
+                                align-content: center;
+                                justify-content: center;
+                                align-items: center;
+                                color: #4DAFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    height: 5vh;
+                    &:hover {
+                        background-color: #dfedf9;
+                        cursor: pointer;
+                    }
+                    th, td {
+                        border-bottom: 1px solid #E3E3E3;
+                        .row-button {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            align-content: center;
+                            column-gap: 1vw;
+                            padding-right: 1.5vw;
+                            .edit-button{
+                                background-color: #DAE8FC;
+                                border-radius: 5px;
+                                border: 3px solid #95AFD6;
+                                padding: 2px 20px;
+                                &:hover{
+                                    background-color: darken($color: #DAE8FC, $amount: 10);
+                                    cursor: pointer;
+                                }
+                            }
+                            .delete-button {
+                                background-color: #F8CECC;
+                                border-radius: 5px;
+                                border: 3px solid #CE7E7B;
+                                padding: 2px 20px;
+                                &:hover{
+                                    background-color: darken($color: #F8CECC, $amount: 10);
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

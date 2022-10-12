@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cover',
@@ -6,6 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cover.component.scss']
 })
 export class CoverComponent implements OnInit {
+
+  private _nameVPMN: string | undefined;
+  @Input() set nameVPMN(value: string | undefined) {
+    this._nameVPMN = value;
+    this.coverInfo[0].description = value;
+    console.log(this.nameVPMN);
+  }
+  get nameVPMN(): string | undefined {
+    return this._nameVPMN;
+  }
 
   public coverTitle: string = 'RAEX IOT Document';
   public coverInfo: any[] = [

@@ -1,3 +1,4 @@
+import { HomeModule } from './modules/home/home.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -7,10 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GatewayModule } from './services/gateways/gateways.module';
 import { ReadingJsonService } from './services/read-json.service';
-
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,4 +22,5 @@ import { ReadingJsonService } from './services/read-json.service';
   providers: [ReadingJsonService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

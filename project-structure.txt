@@ -1,0 +1,91 @@
+|—layout
+    |—components
+    |—containers
+    |— modules
+        |— module-A
+            |— shared-components-module-A
+                |— component-1-module-A
+                    |— component-1.component.html
+                    |— component-1.component.scss
+                    |— component-1.component.spec.ts
+                    |— component-1.component.ts
+                |— component-2-module-A
+                |— component-...-module-A
+            |— containers-module-A
+                |— first-container-parent-module-A
+                    |— components-children-container-module-A
+                        |— component-1-containers-module-A
+                            |— components-1-container-module-A.component.html
+                            |— components-1-container-module-A.component.scss
+                            |— components-1-container-module-A.component.spec.ts
+                            |— components-1-container-module-A.component.ts
+                        |— component-2-containers-module-A
+                        |— component-...-containers-module-A
+                    |— services-containers-module-A
+                        |— service-1-module-A
+                            |— service-1-1-containers-module-A.service.ts
+                            |— service-1-2-containers-module-A.service.ts
+                        |— service-2-module-A
+                        |— service-...-module-A
+                    |— directives-containers-module-A
+                        |— directive-1-module-A
+                            |— directive-1-1-containers-module-A.directive.ts
+                            |— directive-1-2-containers-module-A.directive.ts
+                        |— directive-2-containers-module-A
+                        |— directive-...-containers-module-A
+                    |— pipes-module-A
+                        |— pipes-1-containers-module-A
+                            |— pipes-1-1-containers-module-A.pipes.ts
+                            |— pipes-1-2-containers-module-A.pipes.ts
+                        |— pipes-2-containers-module-A
+                        |— pipes-...-containers-module-A
+                    |— animations-module-A
+                        |— animations-1-containers-module-A
+                            |— animations-1-1-containers-module-A.animations.ts
+                            |— animations-1-2-containers-module-A.animations.ts
+                        |— animations-2-containers-2-module-A
+                        |— animations-...-containers-2-module-A
+                    |— containers-module-A.components.html
+                    |— containers-module-A.components.scss
+                    |— containers-module-A.components.spec.js
+                    |— containers-module-A.components.ts
+                    |— containers-module-A.module.ts
+                |— second-container-parent-module-A
+            |— services-module-A
+                |— service-1-module-A
+                    |— service-1-1-module-A.service.ts
+                    |— service-1-2-module-A.service.ts
+                |— service-2-module-A
+                |— service-...-module-A
+            |— directives-module-A
+                |— directive-1-module-A
+                    |— directive-1-1-module-A.directive.ts
+                    |— directive-1-2-module-A.directive.ts
+                |— directive-2-module-A
+                |— directive-...-module-A
+            |— pipes-module-A
+                |— pipes-1-module-A
+                    |— pipes-1-1-module-A.pipes.ts
+                    |— pipes-1-2-module-A.pipes.ts
+                |— pipes-2-module-A
+                |— pipes-...-module-A
+            |— animations-module-A
+                |— animations-1-module-A
+                    |— animations-1-1-module-A.animations.ts
+                    |— animations-1-2-module-A.animations.ts
+                |— animations-2-module-A
+                |— animations-...-module-A
+            |— enums-module-A
+                |— enums-1-module-A
+                    |— enums-1-1-module-A.enums.ts
+                    |— enums-1-2-module-A.enums.ts
+                |— enums-2-module-A
+                |— enums-...-module-A
+            |— containers-module-A.components.module.ts
+            |— containers-module-A.components.routing.ts
+    |—layout.components.html
+    |—layout.components.scss
+    |—layout.components.js
+    |—layout.components.ts
+    |—layout.module.ts
+    |—layout.routing-module.ts

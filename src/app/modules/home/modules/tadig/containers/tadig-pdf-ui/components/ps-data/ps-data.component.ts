@@ -1,4 +1,4 @@
-import { PsData } from './../../../../models/ps-data/ps-data';
+import { PsData } from '../../../../../../../../models/ps-data/ps-data';
 import { Component, Input, OnInit } from '@angular/core';
 import { PsDataRatingInterval } from 'src/app/models/ps-data-rating-interval/ps-data-rating-interval';
 

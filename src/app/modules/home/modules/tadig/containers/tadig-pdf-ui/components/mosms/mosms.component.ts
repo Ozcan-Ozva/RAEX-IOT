@@ -1,4 +1,4 @@
-import { MoSms } from './../../../../models/mo-sms/mo-sms';
+import { MoSms } from '../../../../../../../../models/mo-sms/mo-sms';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
